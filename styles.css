@@ -1,0 +1,1619 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+/*-----Header-----*/
+.header{
+    min-height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(img/skov1.mp4);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+nav{
+    display: flex;
+    padding: 0% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 300px;
+}
+
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 35px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: brown;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.knap-nav{
+ font-size: 20px;  
+  border: 20px;
+  color: white;
+  padding: 14px 16px;
+  background-color: #99C56D;
+  margin: 0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+
+nav .fa{
+    display: none;
+}
+
+/*-----Forside-----*/
+
+.overskrift{
+    width: 70%;
+    color: white;
+    position: absolute;
+    top:55%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 60px;
+}
+
+.overskrift h1{
+    font-size: 60px;
+    font-weight: bolder;
+    border-bottom: 2px solid white;
+    padding-bottom: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.overskrift p{
+    margin:10px 0 40px;
+    font-size: 20px;  
+}
+
+
+/*---dropdown---*/
+.dropbtn {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 16px;
+        border: none;
+        cursor: pointer;
+
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        border: 20px;
+        padding: 0.75rem 1rem;
+        border-radius: 1rem;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 20px;
+      }
+      
+      .dropdown-content a:hover {background-color: #c5dead;}
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      .dropdown:hover .dropbtn {
+        background-color: #99C56D;
+        border: 20px;
+        padding: 0.75rem 1.5rem;
+        border-radius: 1rem;
+      }
+
+
+/*---Om Gå Glad---*/
+
+.tina{
+    display: flex;
+}
+
+.wrapper{
+    margin: 150px auto;
+    width: 85%;
+    height: 100%;
+    padding: 140px;
+    padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  background-image: linear-gradient(rgba(85, 101, 54, 0.7), rgba(10, 30, 4, 0.7)), url(img/bro.jpg);
+}
+
+
+.wrapper h2{
+    font-size: 50px;
+    width: 40%;
+    color: white;
+}
+.wrapper p{
+    font-size: 15px;
+    margin-top: 2%;
+    margin-left: 1%;
+    padding-bottom: 20px;
+    width: 40%;
+    color: white;
+}
+
+
+
+/*---Erfaring---*/
+
+.farve{
+    padding-top: 100px;
+    min-height: 120vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(7, 41, 12, 0.7)), url(img/sti.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    border-bottom:  solid white;
+    padding-bottom: 125px;
+    padding-top: 50px;
+}
+
+.row{
+    margin-top: 0%;
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    padding: 30px;
+    padding: 0.75rem 1.5rem;
+  border-radius: 1rem;  
+}
+
+.campus{
+    width:85%;
+    margin:auto;
+    text-align: center;
+    padding-top: 40px;
+    border-top:solid white;
+    border-bottom: solid white;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.campus-col{
+    flex-basis:32%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.campus-col img{
+    width: 100%;
+    display: block;
+}
+
+.layer{
+   background: transparent;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   top: 0; 
+   left:0; 
+   transition: 0.5s;
+
+}
+.layer h3{
+    width: 85%;
+    font-weight: 500;
+    color: white;
+    font-size: 40px;
+    bottom:0%;
+    left:50%;
+    transform: translate(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 70%;
+    opacity: 1;
+}
+
+.layer:hover{
+  background: rgb(149, 170, 102);  
+}
+
+.layer:hover p{
+    bottom: 10%;
+    opacity: 1;
+}
+
+.layer p{
+
+    width: 85%;
+    font-weight: 500;
+    color: white;
+    font-size: 20px;
+    bottom:0%;
+    left:50%;
+    transform: translate(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+#sol{
+    width: 20%;
+    padding-top: 20px;
+    align-items: center;
+    margin-left: 40%;
+    display: flex;
+}
+
+
+/*-----Podimo-----*/
+.pige1{
+    min-height: 10vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(156, 83, 160, 0.7)), url(img/pige.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.pige1 h1{
+    font-size: 60px;
+    color: white;
+    padding-bottom: 30px;
+    margin-left: 10%;
+    padding-top: 5%;
+}
+
+.pige1 p{
+    color:white;
+    margin-left: 5%;
+    margin-right: 45%;
+    font-size: 20px;
+    padding-bottom: 15px;
+    padding: 0.75rem 1.5rem;
+      border-radius: 2rem;
+      
+}
+
+.pige1 h2{
+    font-size: 40px;
+    color: white;
+    padding-bottom: 30px;
+    margin-left: 5%;
+    padding-top: 4%;
+    
+}
+
+.podimo{
+    display: flex;
+    align-items: center;
+    margin: 6%;
+}
+
+.podimo img{
+    margin-bottom: 5%;}
+
+.podimo h3{
+    font-size: 40px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: white;
+    padding-bottom: 30px;
+    margin-left: 2%;}
+
+/*----syddanmark----*/
+
+.region{
+    margin: auto;
+    text-align: center;
+    padding-top: 150px;
+    background-color: rgb(252, 245, 237);
+    padding-bottom:700px
+}
+
+.region h1{
+    font-size:50px;
+    font-weight: 600;
+    padding-bottom: 100px;
+}
+
+
+.dk{
+    position: relative;
+    top: 0;
+    left: 0;
+      margin-left: 25%;
+      margin-right: 20%;
+      display: flex;
+      flex-wrap: wrap;
+     
+  }
+  
+  
+  .dk .midt{
+    position: absolute;
+    top: 30px;
+    left: 0;
+
+  }
+  
+  .info{
+      display: flex;
+      position: relative;
+      margin-left: 60%;
+  }
+
+
+.info{
+    display: flex;
+    position: relative;
+    margin-left: 60%;
+}
+
+.billede{
+    
+    min-height: 40vh;
+    width: 100%;
+    background-image: url(img/sti1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    }
+
+  /*---4 grunde---*/
+
+.image-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+    
+  }
+  
+  .image-row {
+    flex-basis: 25%;
+    padding: 10px;
+    
+  }
+  
+  .image-row img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 2rem;
+  }
+  
+  .image-row p {
+    margin-top: 10px;
+    color: white;
+    padding-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .farve1{
+   background-color: rgb(129, 161, 123); 
+   padding: 0.75rem 1.5rem;
+      border-radius: 2rem;
+  }
+
+
+  .farve2{
+    padding-top: 40px;
+    padding-bottom: 100px;
+  }
+    h3{
+    color: black;
+    font-size: 60px;
+    margin-left: 5%;
+    margin-top: 10%;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .image-section h4{
+    font-size: 30px;
+    margin-left: 2%;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .image-section p{
+    font-size: 20px;
+    margin-top: 10%;
+    text-align: center;
+  }
+
+
+
+  .samarbejde img{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+
+  .facebook{
+    background-color: #c5dead;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 25%;
+    padding: 0.75rem 1.5rem;
+      border-radius: 2rem;
+      text-align: center;
+  }
+
+  .facebook h1{
+    font-size: 40px;
+    padding-bottom: 20px;
+    margin: 5%;
+  }
+
+  .knapface{
+    font-size: 20px;  
+     border: 20px;
+     color: white;
+     padding: 14px 16px;
+     background-color: #5b80b8;
+     margin-bottom: 10px;
+     padding: 0.75rem 1.5rem;
+     border-radius: 2rem;
+     text-decoration: none;
+   }
+
+      /*---SYDDANMARK---*/
+
+      .header1{
+        min-height: 75vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(img/kol.jpeg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        background-attachment: fixed;
+    }
+
+    .container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:40px 20px 0 20px;
+    }
+
+
+    .container .box{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .container .box .dream{
+        display: flex;
+        flex-direction: column;
+        width: 32.5%;
+        transition: 5s;
+    }
+
+    .container .box .dream img{
+        width: 100%;
+        padding-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .container .box .dream img:hover{
+        box-shadow: 0 0 20px 10px rgba(0,0,0,0.2);
+    }
+  
+
+
+    /*---Troldhedestien---*/
+    .tina{
+        display: flex;
+    }
+    
+    .wrappertrold{
+        margin: 150px auto;
+        width: 75%;
+        height: 100%;
+        padding: 0.75rem 1.5rem;
+      border-radius: 1rem;
+      background-image: linear-gradient(rgba(4, 19, 24, 0.7), rgba(10, 30, 4, 0.7)), url(img/skovløberhuset.jpeg);
+      background-size: cover;
+      padding-bottom: 5%;
+    }
+    
+    
+    .wrappertrold h2{
+        font-size: 25px;
+        width: 40%;
+        margin-left: 55%;
+        color: white;
+        padding-top: 5%;
+    }
+    .wrappertrold p{
+        font-size: 20px;
+        margin-top: 3%;
+        margin-left: 55%;
+        width: 40%;
+        color: white;
+    }
+
+    
+    .troldhede{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        
+    }
+    
+    .wrapper1{
+        margin: 150px auto;
+        width: 80%;
+        background-color: #c5dead;
+        padding: 40px;
+        padding: 0.75rem 1.5rem;
+      border-radius: 2rem;
+    }
+    
+    .wrapper1 img{
+        margin: 2%;
+        float: right;
+        padding: 0.75rem 1.5rem;
+      border-radius: 1rem;
+    }
+    
+    .wrapper1 h2{
+        padding-top: 5%;
+        font-size: 30px;
+        width: 100%;
+    }
+    .wrapper1 p{
+        font-size: 20px;
+        margin-top: 2%;
+        margin-left: 1%;
+    }
+
+    .baggrund1 .troldhede1 .wrapper2 #sti{
+        border-radius: 4rem;
+    }
+
+    .campus{
+        width:85%;
+        margin:auto;
+        text-align: center;
+        padding-top: 40px;
+        border-top:solid white;
+        border-bottom: solid white;
+        padding-bottom: 100px;
+        padding-top: 100px;
+    }
+    
+    .campus-col1{
+        flex-basis:32%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .campus-col1 img{
+        width: 100%;
+        display: block;
+    }
+    
+    .layer1{
+       background: transparent;
+       height: 100%;
+       width: 100%;
+       position: absolute;
+       top: 0; 
+       left:0; 
+       transition: 0.5s;
+    
+    }
+    .layer1 h3{
+        width: 85%;
+        font-weight: 500;
+        color: white;
+        font-size: 40px;
+        bottom:0%;
+        left:50%;
+        transform: translate(-50%);
+        position: absolute;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .layer1:hover h3{
+        bottom: 70%;
+        opacity: 1;
+    }
+    
+    .layer1:hover{
+      background: rgb(149, 170, 102);  
+    }
+    
+    .layer1:hover p{
+        bottom: 10%;
+        opacity: 1;
+    }
+    
+    .layer1 p{
+        width: 85%;
+        font-size: 20px;
+        color: white;
+        bottom:0%;
+        left:50%;
+        transform: translate(-50%);
+        position: absolute;
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    
+    .image-container {
+        display: flex;
+
+      }
+      
+      .image-container img {
+        width: 25%;
+        padding: 2px; 
+      }
+
+      .bro{
+        min-height: 85vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(img/bro.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        background-attachment: fixed;
+    }
+
+    .bro h1{
+        font-size: 60px;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        padding-bottom: 90px;
+        padding-top: 100px;
+        margin-left: 2%;
+    }
+
+    .bro p{
+        color:white;
+        margin-left: 5%;
+        margin-right: 50%;
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+
+
+    .wrapper3{
+                margin: 150px auto;
+                width: 80%;
+                background-color: whitesmoke;
+                padding: 40px;
+                padding: 0.75rem 1.5rem;
+            }
+
+
+
+
+
+ /* hvad man kan se */
+        .solen{
+            background-image: url("img/pin.png");
+                background-size: 20%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-attachment: fixed;
+                justify-content: space-between;
+                margin-top: 10%;
+            }
+           
+            .solcontainer {
+                padding-top: 500px;
+                width: 50%;
+                margin-left: 25%;
+                padding-bottom: 200px;
+              }
+              
+              .solsection {
+                text-align: center;
+                width: 100%;
+                background-color: #c5dead;
+                padding: 0.75rem 1.5rem;
+              border-radius: 5rem;
+              flex-direction: column;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin-top: 20%;
+            
+              
+              }
+              
+              .solcontent {
+                max-width: 800px;
+                margin: 0 auto;
+                padding-top: 2px;
+              }
+              
+              .solcontent img {
+                width: 50%;
+                height: 50%;
+                margin: 1%;
+                float: right;
+                align-items: center;
+                border-radius: 3rem;
+              }
+
+              
+              .solcontent h2 {
+                font-size: 30px;
+                padding-bottom: 5px;
+              }
+              
+              .solcontent p {
+                font-size: 16px;
+                padding-bottom: 10px;
+              }
+            
+              .knapinfo{
+                margin-top: 4%;
+                display: inline-block;
+                text-decoration: none;
+                color: #68834E;
+                border: 1px solid #68834E;
+                font-size: 25px;
+                background: transparent;
+                position: relative;
+                cursor: pointer;
+                padding: 0.75rem 5rem; 
+            
+            }
+            
+            .knapinfo:hover{
+                border:4px;
+                background: #68834E; 
+                transition: 1s;
+                color: white;
+            }
+       
+            
+        
+        .troldhede2{
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .wrapper3 #kort{
+            margin: 1%;
+            float: left;
+        }
+
+        .image-container #kort{
+            width: 25%;
+            padding: 2px; 
+          }
+        
+        .wrapper3 h2{
+            font-size: 30px;
+            width: 100%;
+            padding-top: 10px;
+        }
+        .wrapper3 p{
+            font-size: 20px;
+            margin-top: 1%;
+            margin-left: 1%;
+        }
+        
+    
+
+        .image-container #kort{
+            width: 25%;
+            padding: 2px; 
+          }
+        
+        .wrapper2 h2{
+            padding-top: 1%;
+            font-size: 30px;
+            width: 100%;
+        }
+        .wrapper2 p{
+            font-size: 20px;
+            margin-top: 2%;
+            margin-left: 1%;
+        }
+
+
+.header2{
+    min-height: 85vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(img/trold.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+
+
+/*----skovløberhudet----*/
+ 
+#gammelskovløberhus{
+    width: 50%;
+}
+
+.header3{
+    min-height: 85vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(img/skov-kopi.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+.wrapperskov{
+    margin: 50px auto;
+    width: 85%;
+    padding: 20px;
+    background-color: #c5dead;
+    margin-top: 15%;
+}
+
+.wrapperskov img{
+    float: left;
+    padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  padding-bottom: 40px;
+}
+
+.wrapperskov p{
+    font-size: 20px;
+    margin-left: 1%;
+    color: black;
+}
+
+.troldhede1 h5{
+    font-size: 20px;
+    width: 41%;
+    float: right;
+    margin-right: 130px;
+}
+
+
+
+.terasse{
+    margin-top: 10%;
+    min-height: 85vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(5, 18, 69, 0.7), rgba(4,9,30,0.7)), url(img/trold.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.terasse h3{
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding-bottom: 100px;
+    margin: 1%
+}
+
+.terasse p{
+    color:white;
+    margin-left: 5%;
+    margin-right: 50%;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+
+.wrapperskov img{
+    float: left;
+    padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  padding-bottom: 40px;
+}
+
+.wrapperskov p{
+    font-size: 20px;
+    margin-left: 1%;
+    color: black;
+}
+
+/*----Bramdrupdam kro----*/
+
+.header4{
+    min-height: 85vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(img/kroo.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+
+
+
+.wrapperkro{
+    margin: 150px auto;
+    width: 75%;
+    height: 100%;
+    padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(10, 30, 4, 0.7)), url(img/kro.jpeg);
+  background-size: cover;
+}
+
+
+.wrapperkro h2{
+    font-size: 25px;
+    width: 40%;
+    margin-left: 55%;
+    color: white;
+    padding-top: 5%;
+}
+.wrapperkro p{
+    font-size: 20px;
+    margin-top: 3%;
+    margin-left: 55%;
+    padding-bottom: 3%;
+    width: 40%;
+    color: white;
+}
+
+
+
+
+
+.image-container1 {
+    display: flex;
+    width: 100%;
+  }
+  
+  .image-container1 img {
+    width: 33.33%;
+    padding: 4px; 
+  }
+
+  .image-container2 {
+    display: flex;
+width: 100%;
+padding-top: 10%;
+padding-bottom: 10%;
+  }
+  
+  .image-container2 img {
+    width: 25%;
+    padding: 2px; 
+  }
+
+ /*---footer---*/
+
+  footer{
+    margin-top:150px;
+    width:100%;
+    padding: 100px 15%;
+    background-color: #92a581;
+    color: black;
+    display: flex;
+  }
+
+  footer div{
+    text-align: center;
+  }
+
+  .col2{
+    flex-grow: 2;
+  }
+
+  footer div h6{
+    font-size: 20px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+  }
+
+  .col1 a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  form input{
+width: 400px;
+height: 45px;
+border-radius: 4px;
+text-align: center;
+margin-top: 40px;
+margin-bottom: 40px;
+outline: none;
+border: black solid 1px;
+
+  }
+
+  form button{
+    background: transparent;
+    color: white;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 20px 30px;
+    font-size:15px;
+    cursor: pointer;
+  }
+
+  .sociale{
+    margin-top: 30px;
+    color: white;
+  }
+
+  .sociale i{
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  .col3 p{
+    color: white;
+  }
+
+  /*---Tablet---*/
+@media(max-width:1100px){
+
+
+    .overskrift h1{
+        padding-top: 100px;
+        font-size: 60px;
+    }
+
+
+
+    .nav-links ul li{
+        display: none;
+    }
+
+
+    .nav-links{
+        position: absolute;
+        background: #68834E;
+        height: 100vh;
+        width:200px;
+        top:0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa{
+        display: block;
+        color: white;
+        font-size: 22px;
+        cursor:pointer;
+    }
+
+    .nav-links ul{
+        padding: 30px;
+    }
+
+    nav img{
+        width: 300px;
+    }
+   
+
+    /*---Erfaring---*/
+    .campus-col .layer p{
+        font-size: 20px;
+    }
+
+    .layer:hover p{
+        bottom: 10%;
+        opacity: 1;
+    }
+
+    .row{
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    padding:10px;
+}
+
+
+    .farve #sol{
+            width: 30%;
+            margin-left: 35%;
+
+    }
+
+    .wrapper h2{
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .wrapper p{
+        font-size: 15px;
+        width: 100%;
+        text-align: center;
+        margin: 2%;
+    }
+
+    .wrappertrold h2{
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .wrappertrold p{
+        font-size: 15px;
+        width: 100%;
+        text-align: center;
+        margin: 2%;
+    }
+
+
+    .region .dk .midt {
+        width: 100%;
+        max-width: 2000px;
+        height: auto;
+    }
+
+
+    .region .dk .nord {
+        width: 100%;
+        max-width: 2000px;
+        height: auto;
+    }
+
+    .info{
+        width: 30%;
+        max-width: 300px;
+        height: auto;
+        
+    }
+
+
+    /*podimo*/
+    .pige1 h1{
+        margin-left: 5%;
+    }
+
+    .pige1 p{
+        font-size: 20px;
+        margin-right: 40%;
+    }
+    /*----syddk----*/
+
+    .syddk h1{
+        width: 100%;
+        font-size: 30px;
+        }
+
+        .container .box{
+            flex-direction: column;
+        }
+    
+        .container .box .dream{
+            width: 100%;
+        }
+
+
+        .bro p{
+            font-size: 20px;
+            width: 60%;
+            padding-bottom: 20px;
+        }
+
+        .image-section {
+    flex-direction:column;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 60%;
+        align-items: center;
+          }
+          
+          .image-row img{
+            margin-top: 30px;
+            width:100%;
+           
+          }
+
+          .image-row{
+            width: 100%;
+          } 
+
+        
+        footer{
+            flex-direction: column;
+        }
+
+        .col2{
+            margin-top: 10%;
+            margin-bottom:20%;
+          }
+
+
+          .layer1 p{
+            font-size: 25px;
+        }
+
+        .campus-col1 img{
+            width: 100%;
+        }
+    
+        .troldhede2{
+            width: 100%;
+        }
+        .wrapper3{
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .solcontent img {
+            width: 100%;
+            height: 100%;
+            margin: 1%;}
+
+        .troldhede1 h5{
+                font-size: 20px;
+                width: 80%;
+                margin-right: 10%;
+            }
+
+            .wrapperkro{
+                width: 90%;
+            }
+
+            .wrapperkro h2{
+                margin: 0;
+                width: 70%;
+                padding-bottom: 5%;
+            }
+
+            .wrapperkro p{
+                margin: 0;
+                width: 70%;
+            }
+
+            .solen{
+                background-size: 40%;
+            }
+
+            .wrappertrold h2{
+                margin: 0;
+            }
+            .wrappertrold p{
+                font-size: 20px;
+            }
+}
+
+
+
+/*---Iphone---*/
+@media(max-width:700px){
+
+    .nav-links ul li{
+        display: block;
+    }
+
+    .nav-links{
+        position: absolute;
+        background: #68834E;
+        height: 100vh;
+        width:200px;
+        top:0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor:pointer;
+    }
+
+    .nav-links ul{
+        padding: 20px;
+    }
+
+    nav img{
+        margin-left: 0%;
+        width: 250px;
+    }
+
+    .overskrift h1{
+        padding-top: 150px;
+        font-size: 40px;
+    }
+
+    .wrapper h2{
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .wrapper p{
+        font-size: 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /*---erfaring---*/
+
+ .row{
+        flex-direction: column;
+        margin-left: 5%;
+    }
+
+    .farve #sol{
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .wrapper1 img{
+        width: 100%;
+    }
+
+    .layer p{
+        font-size: 16px;
+    }
+
+
+    .layer1 p{
+        font-size: 25px;
+    }
+    .wrapper1 h2{
+        font-size: 30px;
+    }
+
+    .wrapper2 img{
+        width: 100%;
+    }
+
+
+    .wrapper2 h2{
+        font-size: 30px;
+    }
+
+    /*Vælg region*/
+    .dk .midt .region{
+        width: 80%;
+    }
+
+    .region .dk .midt {
+        width: 100%;
+        height: auto;
+    }
+
+    .region .dk .nord {
+        width: 100%;
+        height: auto;
+    }
+
+    .region .dk .info{
+       display: none;
+    }
+
+
+    .container .box{
+        flex-direction: column;
+    }
+
+    .container .box .dream{
+        width: 100%;
+    }
+
+
+    
+    
+    .image-container{
+        display: none;
+    }
+    /*podimo*/
+    .pige1 h1{
+        margin-left: 5%;
+    }
+
+    .pige1 p{
+        font-size: 20px;
+        width: 80%;
+    }
+
+    .pige1 h3{
+        font-size: 20px;
+        width: 80%;
+    }
+
+
+    .bro h1{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    
+
+    .bro p{
+        font-size: 15px;
+        width: 60%;
+    }
+
+    .baggrund h1{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .wrapper3 #kort{
+        width: 100%;
+    }
+
+    #kro{
+        display: none;
+    }
+
+
+    .image-section {
+        flex-direction: column;
+      }
+      
+      .image-row {
+        margin-top: 30px;
+      }
+
+
+      .facebook h1{
+        font-size: 20px;
+        padding-bottom: 20px;
+        margin: 5%;
+      }
+
+
+      footer{
+        flex-direction: column;
+      }
+
+      .col2{
+        margin-top: 15%;
+        margin-bottom:25%;
+      }
+
+      .solcontent img{
+        width: 100%;
+      }
+
+      .knapinfo{
+        display: none;
+      }
+
+      .solcontent h2 {
+        font-size: 20px;
+        padding-bottom: 5px;
+      }
+      
+      .solcontent p {
+        font-size: 10px;
+        padding-bottom: 10px;
+      }
+
+      .terasse p{
+        font-size: 15px;
+        width: 60%;
+      }
+
+      .wrappertrold h2{
+        display: none;
+    }
+
+    .wrapperskov{
+        width: 85%;
+        padding: 20px;
+    }
+    
+    #gammelskovløberhus{
+        width: 100%;
+    }
+    
+    
+    .troldhede1 h5{
+        font-size: 20px;
+        width: 80%;
+        margin-right: 10%;
+    }
+
+    .wrapperkro h2{
+        margin: 0;
+        font-size: 20px;
+    }
+    .wrapperkro p{
+        font-size: 15px;
+        margin-top: 3%;
+        float: left;
+        width: 100%;
+        margin: 0;
+        align-items: center;
+    }
+
+    .wrapperkro{
+      width: 90%;
+    }
+
+    .solen{
+        background-size: 50%;
+    }
+
+    .image-section{
+        width: 80%;
+    }
+
+    .header{
+        background-size: 100%;
+        background-size: cover;
+    }
+    }
+
+
+
+   
